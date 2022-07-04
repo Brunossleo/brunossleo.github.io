@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0px;
+    font-family: 'Oswald', sans-serif, arial, tahoma;
+}
+
+header img {
+    width: 100%;
+}
+
+header ul {
+    list-style: none;
+    padding-left: 15px;
+    padding-right: 10px;
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul a:link,
+header ul a:visited {
+    text-decoration: none;
+    background-color: black;
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    background-repeat: no-repeat;
+    background-position: center left -4px;
+    border-bottom: 5px solid black;
+}
+
+header ul a:hover {
+    background-color: white;
+    color: black;
+}
+
+header .luaCheia:hover {
+    background-image: url('../img/Lua-Cheia.png');
+}
+
+header .luaMinguante:hover {
+    background-image: url('../img/lua-Minguante.png');
+}
+
+header .luaNova:hover {
+    background-image: url('../img/Lua-Nova.jpg');
+}
+
+header .luaCrescente:hover {
+    background-image: url('../img/Lua-Crescente.png');
+}
+
+header h2 {
+    text-align: center;
+    padding: 5px;
+}
+
+header h2 {
+    font-size: 20px;
+    color: rgba(133, 11, 11, 0.712);
+}
+
+.hubble1 h3,
+.hubble2 h3,
+.hubble3 h3,
+.iss1 h3,
+.iss2 h3,
+.iss3 h3 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.hubble2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.hubble2 img {
+    width: 100%;
+}
+
+.hubble1,
+.hubble3,
+.iss1,
+.iss2,
+.iss3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.planetas1,
+.planetas2,
+.planetas3 {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+
+.planetas1 p,
+.planetas3 p {
+    margin: 15px 25px 35px 0px;
+}
+
+.planetas2 p {
+    margin: 25px 35px 45px 0px;
+}
+
+div div {
+    padding-bottom: 15px;
+}
+
+.planetas1 img,
+.planetas2 img,
+.planetas3 img {
+    width: 250px;
+}
+
+main section>div {
+    padding: 25px;
+}
+
+.hubble1 p,
+.hubble2 p,
+.hubble3 p,
+.iss1 p,
+.iss2 p,
+.iss3 p {
+    font-size: 14px;
+}
+
+.hubble1 img {
+    width: 100%;
+
+}
+
+.hubble1 p,
+.hubble3 p,
+.iss1 p,
+.iss2 p,
+.iss3 p {
+    text-align: justify
+}
+
+.hubble3 img,
+.iss1 img,
+.iss2 img,
+.iss3 img {
+    width: 100%;
+}
+
+
+main section:nth-child(1) {
+    background-color: rgb(235, 241, 235);
+}
+
+main section:nth-child(3) {
+    background-color: rgb(235, 241, 235);
+    padding-top: 0px;
+}
+
+footer {
+    padding: 20 px;
+    background-color: black;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) {
+    header img {
+        content: url('../img/topoTablet.png');
+    }
+
+    header ul {
+        text-align: right;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+}
+
+/*Desktop/Computador*/
+@media screen and (min-width: 1024px) {
+    header img {
+        content: url('../img/topoPC.png');
+    }
+
+    header h2 {
+        font-size: 30px;
+    }
+
+    .hubble2,
+    .hubble3,
+    .iss2{
+        flex-direction: row;
+    }
+
+    .hubble3 img{
+        padding-right: 20px;
+        width: 350px;
+    }
+    .iss2 img {
+        padding-right: 20px;
+        width: 450px;
+    }
+
+    .hubble1,
+    .iss1,
+    .iss3 {
+        flex-direction: row-reverse;
+    }
+
+    .hubble1 img {
+        padding-left: 20px;
+        width: 450px;
+        padding-bottom: 25px;
+    }
+
+    .hubble2 img,
+    .iss1 img,
+    .iss3 img {
+        padding-left: 20px;
+        width: 500px;
+    }
+
+    main section>div {
+        padding-top: 45px;
+    }
+
+    .hubble1 p,
+    .hubble2 p,
+    .hubble3 p,
+    .planetas1 p,
+    .planetas2 p,
+    .planetas3 p,
+    .iss1 p,
+    .iss2 p,
+    .iss3 p {
+        font-size: 16px;
+    }
+
+    .planetas1,
+    .planetas2,
+    .planetas3 {
+        flex-direction: row;
+    }
+
+    .container {
+        width: 1200px;
+        margin: auto;
+    }
+}

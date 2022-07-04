@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0px;
+    font-family: 'Oswald', sans-serif, arial, tahoma;
+}
+
+header img {
+    width: 100%;
+}
+
+header ul {
+    list-style: none;
+    padding-left: 15px;
+    padding-right: 10px;
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul a:link,
+header ul a:visited {
+    text-decoration: none;
+    background-color: black;
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    background-repeat: no-repeat;
+    background-position: center left -4px;
+    border-bottom: 5px solid black;
+}
+
+header ul a:hover {
+    background-color: white;
+    color: black;
+}
+
+header .luaCheia:hover {
+    background-image: url('../img/Lua-Cheia.png');
+}
+
+header .luaMinguante:hover {
+    background-image: url('../img/lua-Minguante.png');
+}
+
+header .luaNova:hover {
+    background-image: url('../img/Lua-Nova.jpg');
+}
+
+header .luaCrescente:hover {
+    background-image: url('../img/Lua-Crescente.png');
+}
+
+header h1,
+header h2 {
+    text-align: center;
+    padding: 5px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header h2 {
+    font-size: 16px;
+    color: red;
+}
+
+.progespacial h3{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.universo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.universo p {
+    margin: 15px 10px 35px 10px;
+}
+
+.universo img {
+    width: 250px;
+}
+
+.progespacial {
+    display: flex;
+    flex-direction: column;
+}
+
+main section>div {
+    padding: 25px;
+}
+
+main section>div summary{
+    color: red;
+}
+
+.galaxia {
+    display: flex;
+    flex-direction: column;
+}
+
+.galaxia p,
+.universo p,
+.progespacial p {
+    font-size: 14px;
+}
+
+.galaxia img {
+    width: 100%;
+
+}
+
+.galaxia p {
+    text-align: justify
+}
+
+.progespacial img {
+    width: 100%;
+}
+
+.progespacial p {
+    text-align: justify;
+}
+
+main section:nth-child(1) {
+    background-color: rgb(235, 241, 235);
+}
+
+main section:nth-child(3) {
+    background-color: rgb(235, 241, 235);
+    padding-top: 0px;
+}
+
+footer {
+    padding: 5px;
+    background-color: black;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) {
+    header img {
+        content: url('../img/topoTablet.png');
+    }
+
+    header ul {
+        text-align: right;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+}
+
+/*Desktop/Computador*/
+@media screen and (min-width: 1024px) {
+    header img {
+        content: url('../img/topoPC.png');
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+
+    .universo {
+        flex-direction: row;
+    }
+
+    .progespacial {
+        flex-direction: row;
+    }
+    .progespacial img {
+        padding-right: 20px;
+        width: 350px;
+    }
+
+    .galaxia {
+        flex-direction: row-reverse;
+    }
+
+    .galaxia img {
+        padding-left: 20px;
+        width: 550px;
+    }
+
+    main section>div {
+        padding-top: 45px;
+    }
+
+    .galaxia p,
+    .universo p,
+    .progespacial p {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 1200px;
+        margin: auto;
+    }
+}
